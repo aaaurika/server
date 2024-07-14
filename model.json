@@ -1,0 +1,8 @@
+{
+    "type": "Men's",
+    "kind": "Sneakers",
+    "color":  "Black",
+    "price": 5000,
+    "manufacturer": "Nike",
+    "size": 38
+}

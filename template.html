@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ type }}</title>
+    <style>
+       
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 40px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+            margin: 0;
+            padding: 10px 0;
+        }
+
+        h1 {
+            font-size: 48px;
+            color: #333;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 36px;
+            color: #555;
+            text-align: center;
+        }
+
+        h3 {
+            font-size: 24px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        h4 {
+            font-size: 20px;
+            color: #999;
+        }
+
+        h5 {
+            font-size: 16px;
+            color: #aaa;
+        }
+
+        h6 {
+            font-size: 14px;
+            color: #bbb;
+        }
+
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 30px;
+        }
+
+        .product-info > * {
+            margin-bottom: 10px;
+        }
+
+        .accent-color {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ type }}</h1>
+        <h2>{{ kind }}</h2>
+        <div class="product-info">
+            <h3>Color: <span class="accent-color">{{ color }}</span></h3>
+            <h4>Price: <span class="accent-color">{{ price }} €</span></h4>
+            <h5>Manufacturer: <span class="accent-color">{{ manufacturer }}</span></h5>
+            <h6>Size: <span class="accent-color">{{ size }}</span></h6>
+        </div>
+    </div>
+</body>
+</html>
+
